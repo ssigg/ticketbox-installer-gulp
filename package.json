@@ -1,0 +1,20 @@
+{
+  "name": "ticketbox-installer-gulp",
+  "version": "0.1.0",
+  "description": "Installer for Ticketbox",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-decompress": "^2.0.2",
+    "gulp-download": "0.0.1",
+    "gulp-exec": "^3.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-token-replace": "^1.1.5",
+    "gulp-unzip": "^1.0.1",
+    "gulp-zip": "^5.0.0"
+  }
+}

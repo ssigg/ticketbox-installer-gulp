@@ -1,0 +1,99 @@
+{
+    "core": {
+        "database": {
+            "dbname": "<database>",
+            "user": "<username>",
+            "password": "<password>",
+            "host": "<host>",
+            "driver": "pdo_mysql"
+        },
+        "pdf": {
+            "service": "Api2Pdf",
+            "settings": {
+                "postUrl": "https://v2018.api2pdf.com/chrome/html",
+                "key": "<api key>"
+            }
+        },
+        "reservations": {
+            "lifetimeInSeconds": 600
+        },
+        "log": {
+            "from": "Logger <tickets.logger@example.com>",
+            "subject": "Error",
+            "listeners": [
+                "john.doe@example.com"
+            ]
+        },
+        "hostName": "John Doe Events",
+        "administrator": {
+            "firstname": "John",
+            "lastname": "Doe",
+            "email": "john.doe@example.com"
+        },
+        "currency": "USD",
+        "styles": {
+            "free": { "background": "#fff", "stroke": "0px solid #000", "opacity": 0 },
+            "ordered": { "background": "#16f", "stroke": "1px solid #000", "opacity": 0.5 },
+            "sold": { "background": "#f33", "stroke": "1px solid #000", "opacity": 1 },
+            "freeHover": { "background": "#282", "stroke": "1px solid #000", "opacity": 0.5 },
+            "reserved": { "background": "#f33", "stroke": "1px solid #000", "opacity": 1 },
+            "reservedbymyself": { "background": "#f33", "stroke": "1px solid #000", "opacity": 0.4 }
+        }
+    },
+    "boxoffices": [
+        {
+            "name": "Boxoffice One",
+            "directoryName": "boxoffice-one",
+            "type": "pdf",
+            "mailer": {
+                "from": "Ticket system <tickets@example.com>",
+                "replyTo": {
+                    "name": "John Doe",
+                    "email": "john.doe@example.com"
+                },
+                "notification": {
+                    "listeners": [
+                        "john.doe@example.com"
+                    ]
+                }
+            },
+            "maxNumberOfUnspecifiedSeats": 10,
+            "priceModificators": {
+                "addend": -5,
+                "factor": 1
+            }
+        }
+    ],
+    "customers": [
+        {
+            "directoryName": "customer",
+            "mailer": {
+                "from": "Ticket system <tickets@example.com>",
+                "replyTo": {
+                    "name": "John Doe",
+                    "email": "john.doe@example.com"
+                },
+                "notification": {
+                    "listeners": [
+                        "john.doe@example.com"
+                    ]
+                }
+            },
+            "payments": {
+                "gateway": "Braintree",
+                "settings": {
+                    "environment": "sandbox",
+                    "merchantId": "<merchantId>",
+                    "publicKey": "<publicKey>",
+                    "privateKey": "<privateKey>"
+                }
+            },
+            "priceModificators": {
+                "addend": 0,
+                "factor": 1
+            },
+            "canCustomerPurchase": true,
+            "maxNumberOfUnspecifiedSeats": 10
+        }
+    ]
+}

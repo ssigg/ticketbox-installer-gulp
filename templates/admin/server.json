@@ -1,0 +1,6 @@
+{
+    "displayErrorDetails": false,
+    "addContentLengthHeader": false,
+    "Spot": {{database}},
+    "Reservations": {{reservations}}
+}

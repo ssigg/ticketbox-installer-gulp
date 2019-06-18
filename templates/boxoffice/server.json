@@ -1,0 +1,17 @@
+{
+    "displayErrorDetails": false,
+    "addContentLengthHeader": false,
+    "Spot": {{database}},
+    "HostName": "{{hostName}}",
+    "Administrator": {
+        "firstname": "{{administrator.firstname}}",
+        "lastname": "{{administrator.lastname}}",
+        "email": "{{administrator.email}}"
+    },
+    "Reservations": {{reservations}},
+    "Mailer": {{mailer}},
+    "PriceModificators": {{priceModificators}},
+    "ticketDirectory": "../../core/common/tickets",
+    "PdfConverter": {{pdf}},
+    "Log": {{log}}
+}

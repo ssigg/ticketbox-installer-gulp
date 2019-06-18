@@ -1,0 +1,17 @@
+{
+    "displayErrorDetails": false,
+    "addContentLengthHeader": false,
+    "Spot": {{database}},
+    "HostName": "{{hostName}}",
+    "Administrator": {
+        "firstname": "{{administrator.firstname}}",
+        "lastname": "{{administrator.lastname}}",
+        "email": "{{administrator.email}}"
+    },
+    "Mailer": {{mailer}},
+    "PaymentProvider": {{payments}},
+    "PdfConverter": {{pdf}},
+    "Reservations": {{reservations}},
+    "PriceModificators": {{priceModificators}},
+    "Log": {{log}}
+}
